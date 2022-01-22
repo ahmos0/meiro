@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/meiro/Scenes/niwaka.unity
+    guid: ac9eb7858999246028c98f3fb6e8deb0
+  - enabled: 1
+    path: Assets/meiro/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/meiro/Scenes/niwakaResult.unity
+    guid: ced2311a1126d40f3bdc63e8a7f7f1fb
   m_configObjects: {}
