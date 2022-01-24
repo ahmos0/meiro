@@ -4,35 +4,28 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    [SerializeField] private Vector3 velocity;
-    [SerializeField] private float moveSpeed = 5.0f;
-
-     void Update()
-     {
-        velocity = Vector3.zero;
-        if(Input.GetKey(KeyCode.W))
+    private Rigidbody rb;
+    public float velocity = 20.0f;
+    public float v;
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.D))
         {
-            velocity.z += 1;
+            GetComponent<Rigidbody>().velocity = Vector3.right;
         }
         if(Input.GetKey(KeyCode.A))
         {
-            velocity.x -= 1;
+            GetComponent<Rigidbody>().velocity = Vector3.left;
         }
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.W))
         {
-            velocity.z -= 1;
+            GetComponent<Rigidbody>().velocity = Vector3.forward;
         }
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.A))
         {
-            velocity.x += 1;
-        }
-
-        velocity = velocity.normalized * moveSpeed * Time.deltaTime;
-
-        if(velocity.magnitude > 0)
-        {
-            transform.position += velocity;
+            GetComponent<Rigidbody>().velocity = (-1)*Vector3.forward;
         }
     }
 }
+
 
