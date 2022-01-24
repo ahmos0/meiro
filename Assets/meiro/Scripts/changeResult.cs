@@ -14,9 +14,9 @@ public class changeResult : MonoBehaviour
     void Start()
     {
         // Input each vector goal
-        _pos.x = -10;
+        /*_pos.x = -10;
         _pos.y = 0;
-        _pos.z = 10;
+        _pos.z = 10;*/
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class changeResult : MonoBehaviour
         
         _mytrans = this.transform;
 
-        if (Input.GetKey(KeyCode.W))
+        /*if (Input.GetKey(KeyCode.W))
         {
             this.transform.Translate(0.0f, 0.0f, 0.1f);
         }
@@ -40,12 +40,12 @@ public class changeResult : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             this.transform.Translate(0.1f, 0.0f, 0.0f);
-        }
+        }*/
 
-
+        //&& _mytrans.position.x <= -2206
 
         //Please change below as you like 
-        if (_mytrans.position.z > _pos.z && _mytrans.position.x < _pos.x)
+        if (_mytrans.position.z >= 1941)
         {
             SceneManager.LoadScene("niwakaResult");
         }   

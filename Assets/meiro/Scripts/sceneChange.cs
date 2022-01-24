@@ -27,7 +27,7 @@ public class sceneChange : MonoBehaviour
     //For changing scene
     public void PushStartButton()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("tatsuya");
     }
 
 

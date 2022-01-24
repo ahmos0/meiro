@@ -13,7 +13,7 @@ public class resultexp : MonoBehaviour
     {
         minutes = Timer.getscore1();
         seconds = Timer.getscore2();
-        ScoreText.text = string.Format("TIME {0}分{1}秒", minutes, (int)seconds);
+        ScoreText.text = string.Format("{0}分{1}秒", minutes, (int)seconds);
     }
 
     // Update is called once per frame
